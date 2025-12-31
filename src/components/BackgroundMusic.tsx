@@ -11,9 +11,8 @@ const BackgroundMusic = ({ hasInteracted }: BackgroundMusicProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [showMusicPrompt, setShowMusicPrompt] = useState(false);
 
-  // Mein Tera - Romantic Hindi song (using a placeholder romantic music URL)
-  // In production, replace with actual "Mein Tera" audio file
-  const musicUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+  // Tu Jaane Na - Romantic Hindi song from Ajab Prem Ki Ghazab Kahani
+  const musicUrl = "/audio/tu-jaane-na.mp3";
 
   useEffect(() => {
     if (hasInteracted && audioRef.current && !isPlaying) {
