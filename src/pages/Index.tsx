@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Heart, Sparkles } from "lucide-react";
 import FloatingHearts from "@/components/FloatingHearts";
+import FallingPetals from "@/components/FallingPetals";
 import NewYearPopup from "@/components/NewYearPopup";
 import LoveQuestion from "@/components/LoveQuestion";
 import BackgroundMusic from "@/components/BackgroundMusic";
@@ -31,8 +32,9 @@ const Index = () => {
 
   return (
     <div className="min-h-[200vh] romantic-gradient overflow-x-hidden">
-      {/* Floating Hearts Background */}
+      {/* Floating Hearts & Falling Petals Background */}
       <FloatingHearts />
+      <FallingPetals />
 
       {/* New Year Popup */}
       <NewYearPopup
